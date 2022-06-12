@@ -1,0 +1,130 @@
+body {
+  background: #000;
+
+}
+.mian_header{
+  position: relative;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+
+.head {
+  text-align: center;
+  text-shadow: 1px 1px 2px #f6f6f6, 0 0 1em #a5a4a4, 0 0 0.2em #000000;
+}
+
+.btn {
+  width: 300px;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background: #000;
+  color: white;
+  box-shadow: rgba(185, 185, 185, 0.823) 0px 1px 4px;
+}
+
+.btn:hover{
+  background: rgba(50, 50, 50, 0.727);
+}
+
+.btn_show {
+  background: rgb(53, 53, 53);
+  width: 301px;
+  height: 60px;
+}
+
+.input{
+  margin: 20px 0;
+
+}
+
+.output{
+  height: 30px;
+  width: 215px;
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  color: black;
+  background: #71d4a7;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.copy{
+  height: 35px;
+  width: 70px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  color: white;
+  background: #71d4a7;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+}
+
+
+.copy_show{
+  background: #000;
+  color: yellow;
+}
+
+
+.toast-messenge{
+  position: fixed;
+  z-index: 999;
+  top: 2rem;
+  right: 2rem;
+  background: rgb(19, 201,110);
+  color: #000;
+  border: 1px solid #fff;
+  border-radius: 0.25rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
+  visibility: visible;
+  opacity: 1;
+
+}
+
+.toast-messenge-hide{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.toast-messenge-side-in{
+  animation: toast-animation-in 0.5s ease-in;
+}
+
+.toast-messenge-side-out{
+  animation: toast-animation-out 0.5s ease-in;
+}
+
+@keyframes toast-animation-in{
+  from{
+    transform: translate(200px);
+    opacity: 0;
+  }
+  to{
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes toast-amimantion-out{
+  from{
+    transform: translate(0px);
+    opacity: 1;
+  }
+  to{
+    transform: translate(200px);
+    opacity: 0;
+  }
+}
