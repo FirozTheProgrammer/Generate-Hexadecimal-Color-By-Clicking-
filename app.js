@@ -85,4 +85,5 @@ function generateToastMsg(msg){
 
 }
 
+// call main function
 main();
