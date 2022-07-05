@@ -23,9 +23,10 @@ let div= null;
 
 // generate the rgb color
 
-window.onclick = ()=>{
-  main();
-}
+// window.onclick = ()=>{
+//   main();
+
+// }
 
 function main(){
     const bg = document.querySelector("#root");
@@ -84,3 +85,5 @@ function generateToastMsg(msg){
 
 }
 
+// call main function
+main();
